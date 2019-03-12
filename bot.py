@@ -1,10 +1,6 @@
 from bottle import run, post, request as bottle_request
 import requests
 
-'''
-{'update_id': 116115476, 'message': {'text': 'a', 'from': {'username': 'LTKills', 'id': 26289585,
-'''
-
 bot_token = '702304671:AAFXVoC1Ev_SBnfHzQR_TOjoCCaveMka6Lg'
 api_url = 'https://api.telegram.org/bot'
 
@@ -21,7 +17,7 @@ def sendMsg(msg, chat_id):
     pass
 
 
-@post('/')
+@post('/702304671:AAFXVoC1Ev_SBnfHzQR_TOjoCCaveMka6Lg/')
 def main():
     data = bottle_request.json
     chat_id = getChatId(data)
