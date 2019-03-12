@@ -1,2 +1,2 @@
-requests==2.19.1
-bottle==0.12.16
+requests>=2.19.1
+bottle>=0.12.16
