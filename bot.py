@@ -18,7 +18,7 @@ def sendMsg(msg, chat_id):
     pass
 
 
-@post('/702304671:AAFXVoC1Ev_SBnfHzQR_TOjoCCaveMka6Lg/')
+@post('/702304671AAFXVoC1Ev_SBnfHzQR_TOjoCCaveMka6Lg/')
 def main():
     data = bottle_request.json
     chat_id = getChatId(data)
