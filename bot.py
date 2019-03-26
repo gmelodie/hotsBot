@@ -15,10 +15,9 @@ def sendMsg(msg, chat_id):
     send = api_url + bot_token + '/' + 'sendMessage?chat_id=' + \
         str(chat_id) + '&text=' + msg
     requests.get(send)
-    pass
 
 
-@post('/'+ str(bot_token) + '/')
+@post('/'+ str(bot_token).replace(':', '') + '/')
 def main():
     data = bottle_request.json
     chat_id = getChatId(data)
